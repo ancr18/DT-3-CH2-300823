@@ -28,3 +28,36 @@
 // FizzBuzz
 // dan seterus nya sampai dengan 100
 
+// 1. buat function fizzbuzz
+function fizzBuzz(n){
+
+    // 2. buat array result untuk menampung data 
+    const result = [];
+
+    // 3. buat perulangan hingga data yang telah ditentukan (n)
+    for(let i = 1; i <= n; i++){
+
+        // 4. percabangan jika angka habis dibagi 3 dan 5 maka tampilkan pesan FizzBuzz
+        if(i % 3 == 0 && i % 5 == 0){
+            result.push("FizzBuzz")
+        } 
+        
+        // 5. percabangan jika angka habis dibagi 3 maka tampilkan pesan Fizz
+        else if(i % 3 == 0){
+            result.push("Fizz")
+        } 
+        
+        // 6. percabangan jika angka habis dibagi 5 maka tamplkan pesan Buzz
+        else if(i % 5 == 0){
+            result.push("Buzz")
+        } 
+        
+        // 7. jika angka tidak termasuk kriteria diatas, maka tampilkan angka nya
+        else{
+            result.push(i)
+        }
+    }
+    return result;
+}
+
+console.log(fizzBuzz(100))
