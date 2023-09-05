@@ -7,18 +7,18 @@ function solution(n) {
     // tulis jawabanmu disini
 
     // 1. buat variabel tampung
-    let sum = 0;
+    let result = 0;
 
     // 2. buat perulangan sebanyak jumlah angka dan lebih besar dari 0, agar perulangan  dijalankan hanya jika angka nya lebih dari 0
     while(n > 0){
 
-        // 3. mengambil digit terakhir dengan menggunakan modulus 10, dan menambahkan ke dalam variabel sum
-        sum += n % 10;
+        // 3. mengambil digit terakhir dengan menggunakan modulus 10, dan menambahkan ke dalam variabel result
+        result += n % 10;
 
         // 4. lalu angka nya di bagi 10, dan dihilangkan desimal nya, agar menghilangkan digit terakhirnya
         n = Math.floor(n / 10)
     }
-    return sum
+    return result
        
 }
 
