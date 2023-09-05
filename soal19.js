@@ -6,7 +6,22 @@
 function solution(n) {
     // tulis jawabanmu disini
 
+    // 1. buat variabel tampung
+    let sum = 0;
+
+    // 2. buat perulangan sebanyak jumlah angka dan lebih besar dari 0, agar perulangan  dijalankan hanya jika angka nya lebih dari 0
+    while(n > 0){
+
+        // 3. mengambil digit terakhir dengan menggunakan modulus 10, dan menambahkan ke dalam variabel sum
+        sum += n % 10;
+
+        // 4. lalu angka nya di bagi 10, dan dihilangkan desimal nya, agar menghilangkan digit terakhirnya
+        n = Math.floor(n / 10)
+    }
+    return sum
+       
 }
 
 console.log(solution(2022)) // expected output 6
 console.log(solution(1001)) // expected output 2
+
