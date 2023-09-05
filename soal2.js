@@ -1,8 +1,18 @@
+// tentukan user yang gender female dan ada berapa jumlah user nya
+
+// 1. membuat fungsi
 function female(data){
+
+    // 2. membuat sebuah variabel untuk menampung
     const result = []
 
+    // 3. membuat sebuah perulangan sebanyak data yang ada
     for(let i = 0; i < data.length; i++){
+
+        // 4. jika data gender adalah female
         if (data[i].gender === 'female'){
+
+            // maka masukkan dalam variabel penampung
             result.push(data[i])
         }
     }
