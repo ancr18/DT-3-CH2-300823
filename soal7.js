@@ -9,18 +9,20 @@ function friends(data) {
     // 3. buat pengulangan array untuk membaca data satu persatu
     data.forEach(user => {
 
+        // 4. buat variabel friendsIrfiAdella 
         let friendsIrfiAdella = false;
 
-        // 4. buat pengulangan untuk friends
+        // 5. buat pengulangan untuk friends
         user.friends.forEach(f => {
 
-            // 5. jika elemen teman ada yang bernama imam, maka user nya dimasukkan kedalam variabel penampung
+            // 6. jika ada elemen teman yang bernama irfi dan adella, maka variabelnya bernilai true
             if(f.name === 'Irfi' || f.name === 'Adella'){
                 friendsIrfiAdella = true;
             }
 
         })
-
+        
+        // 7. jika ada yang bukan temannya mereka, maka masukkan ke variabel penampung
         if(!friendsIrfiAdella){
             result.push(user)
         }
