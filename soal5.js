@@ -1,6 +1,6 @@
 // tentukan user yang eyeColor nya blue dan ada berapa jumlah nya
 
-// 1. buat fungsi registrasi
+// 1. buat fungsi cek warna mata
 function eyeColors(data) {
 
     // 2. buat variabel penampung
@@ -9,7 +9,7 @@ function eyeColors(data) {
     // 3. buat pengulangan array 
     data.forEach(e => {
 
-        // 5. bandingkan tahun
+        // 5. cari mata yang berwarna biru
         if(e.eyeColor == 'blue'){
             result.push(e)
         }
