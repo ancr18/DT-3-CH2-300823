@@ -1,6 +1,6 @@
 // tentukan user yang gender female ATAU user yang eyeColor nya brown dan ada berapa jumlah user nya
 
-// 1. buat fungsi registrasi
+// 1. buat fungsi 
 function eyeGender(data) {
 
     // 2. buat variabel penampung
@@ -9,7 +9,7 @@ function eyeGender(data) {
     // 3. buat pengulangan array 
     data.forEach(eg => {
 
-        // 5. bandingkan tahun
+        // 4. cari warna mata yang coklat dan gender nya female
         if(eg.eyeColor === 'brown' || eg.gender === 'female'){
             result.push(eg)
         }
