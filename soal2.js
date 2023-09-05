@@ -1,4 +1,16 @@
-[
+function female(data){
+    const result = []
+
+    for(let i = 0; i < data.length; i++){
+        if (data[i].gender === 'female'){
+            result.push(data[i])
+        }
+    }
+
+    return result;
+}
+
+const users = [
     {
         "_id": "64f0873bd80eb663848b6dcf",
         "name": "Terra Briggs",
@@ -252,3 +264,6 @@
         "favoriteFruit": "banana"
     }
 ]
+
+console.log(female(users))
+console.log(`Jumlah gender female adalah : ${female(users).length}`)
