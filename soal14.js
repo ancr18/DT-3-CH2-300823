@@ -11,8 +11,10 @@ function getData(data){
 
         // 4. ganti domain email
         user.email = user.email.replace(/@.+$/, '@binar.org')
+
+        return user;
     })
-    
+
     return data
     
 }
