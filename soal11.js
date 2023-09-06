@@ -283,4 +283,5 @@ const users = [
 ]
 
 console.log(getFriendFruit(users))
-console.log(`Jumlah user yang memiliki teman bernama Imam adalah : ${getFriendFruit(users).length}`)
+console.log(`Jumlah user yang mempunyai teman bernama Grace dan favorit fruit nya apple atau banana
+ adalah : ${getFriendFruit(users).length}`)
