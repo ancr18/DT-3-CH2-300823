@@ -1,6 +1,6 @@
 // tentukan user yang tidak mempunyai teman bernama Irfi dan Adella dan ada berapa jumlah nya
 
-// 1. buat fungsi registrasi
+// 1. buat fungsi 
 function friends(data) {
 
     // 2. buat variabel penampung
